@@ -115,6 +115,7 @@
         flex-direction: column;
         align-items: center;
     }
+    
 }
 @media screen and (max-width:320px){
     .footer{
@@ -124,8 +125,8 @@
     .footerLeft__iteamBotm{
         display: none;
     }
-    .footerRight{
-        display: flex;
-        flex-direction: column;
-    }
+    // .footerRight{
+    //     display: flex;
+    //     flex-direction: column;
+    // }
 }

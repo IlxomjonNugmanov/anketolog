@@ -64,6 +64,12 @@
             text-transform: uppercase;
             color: #FFFFFF;
             background-color: var( --bnt-colorBlue);
+
+            @media screen  and (max-width:505px){
+              width: 100%;
+              display: block;            
+ 
+            }
         }
         &--white{
             padding: 16px 29px;
@@ -74,6 +80,15 @@
             text-transform: uppercase;
             color: #333333;
             border: 1px solid #333333;
+            
+
+            @media screen  and (max-width:505px){
+                margin-top: 20px;
+                display: block;
+                width: 100%;
+                 
+                
+            }
         }
     }
 }
@@ -139,6 +154,9 @@
         text-align: center;
     }
 
+  
+}
+@media screen  and (max-width:505px){
     .client__btn{
 
         &--blue{
@@ -151,4 +169,5 @@
             width: 100%;
         }
     }
+    
 }

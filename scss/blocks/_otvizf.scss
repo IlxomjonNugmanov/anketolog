@@ -94,14 +94,18 @@
     }
     
 }
+@media screen  and (max-width:545px){
+    .otvizf__cards {
+      column-gap: 10px; 
+    }
+    
+}
+
 @media screen  and (max-width:320px){
     .otvizf__cardTop--logo{
      display: none;
     }
     
-    .otvizf__cards {
-      column-gap: 10px; 
-    }
     
     .otvizf__topShape {
        bottom: -100px;
