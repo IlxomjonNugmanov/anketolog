@@ -1,0 +1,91 @@
+.hero-section{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F7F9FB 100%);
+
+}
+
+.hero{
+    padding: 80px 0 80px 0;
+    text-align: center;
+
+    &--title{
+        @include subTitle;
+    }
+    
+    &__cardWrapper{
+        padding-top: 32px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        column-gap: 30px;
+        text-align: start;
+    }
+    &__card{
+        max-width: 350px;
+        padding: 25px 97px 20px 25px;
+        box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.08);
+        border-radius: 9px;
+
+        &--title{
+            @include subtext18 ;
+        }
+        &--text{
+            max-width: 215px;
+            margin: 16px 0 8px 0;
+            @include subtext14 ;
+        }
+        &--social{
+            display: inline;
+        }
+    }
+}
+
+
+@media screen  and (max-width:768px){
+
+    .hero__cardWrapper{
+        grid-template-columns: auto auto auto;
+        row-gap: 30px;
+        column-gap: 0;
+        justify-content: space-between;
+    }
+    .card3{
+        max-width: 100%;
+        grid-column: 1 /4;
+        grid-row: 2 / 3 ;
+
+    }
+}
+@media screen  and (max-width:768px){
+
+    .hero__cardWrapper{
+        grid-template-columns: auto auto auto;
+        row-gap: 30px;
+        column-gap: 0;
+        justify-content: space-between;
+    }
+    .card1{
+        max-width: 100%;
+        grid-column: 1 /4;
+        grid-row: 1 / 2 ;
+
+    }
+    .card2{
+        max-width: 100%;
+        grid-column: 1 /4;
+        grid-row: 3 / 4 ;
+
+    }
+    .card3{
+        max-width: 100%;
+        grid-column: 1 /4;
+        grid-row: 4 / 5 ;
+
+    }
+}
+@media screen  and(max-width:320px){
+    .hero__card{
+        padding: 25px 25px 20px 25px;
+
+    }
+    
+}

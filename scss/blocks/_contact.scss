@@ -1,0 +1,220 @@
+.section-danni{
+    padding: 80px 0 80px 0;
+
+
+}
+.danni{
+
+
+    h2{
+        margin-bottom: 40px;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 40px;
+        color: #333333;
+    }
+}
+
+
+.danniTop{
+    padding-top: 40px;
+    display: flex;
+    column-gap: 20px;
+    border-top: 1px solid #E0E0E0;
+
+    &__card{
+        max-width: 466px;
+        width: 100%;
+        padding: 36px 16px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px rgba(51, 51, 51, 0.1);
+        border-radius: 9px;
+
+        &__title{
+             margin-bottom: 15px;
+            h3{
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+                display: flex;
+                color: #3F3D56;
+
+            }
+        }
+
+        p{
+            font-size: 16px;
+            line-height: 24px;
+            color: #4F4F4F;
+
+            a{
+                font-size: 16px;
+                line-height: 24px;
+                color: #4F4F4F;
+            }
+        }
+    }
+}
+.danniMain{
+
+    margin-top: 20px;
+    display: flex;
+    column-gap: 20px;
+     
+    &__left{
+        
+        max-width: 460px;
+        width: 100%;
+        padding: 36px 16px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px rgba(51, 51, 51, 0.1);
+        border-radius: 9px;
+
+        &__title{
+              margin-bottom: 15px;
+            h3{
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+                color: #3F3D56;
+
+            }
+            
+        }
+        &__iteam{
+             margin-bottom: 24px;
+            p{
+                font-size: 16px;
+                line-height: 24px;
+                color: #4F4F4F;
+            }
+
+            a{
+                font-size: 16px;
+                line-height: 24px;
+                color: #EF4744; 
+            }
+        }
+    }
+
+
+
+    &__right{
+         max-width: 920px;
+         width: 100%;
+        iframe{
+            width: 100%;
+            height: 100%;
+            filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.1));
+            border-radius: 9px;
+        }
+    }
+}
+
+
+
+
+
+
+.last{
+
+    h2{
+        font-size: 36px;
+        line-height: 40px;
+        color: #333333;
+        margin-bottom: 40px;
+    }
+}
+.lastWrapper{
+    padding: 48px 0 80px 0;
+    display: flex;
+    column-gap: 20px;
+    border-top: 1px solid #E0E0E0;
+}
+.lastCard{
+    max-width: 466px;
+    width: 100%;
+    padding: 36px 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(51, 51, 51, 0.1);
+    border-radius: 9px;
+
+    &__iteam{
+        margin-bottom: 20px;
+
+        p{
+            margin-top: 6px;
+            max-width: 300px;
+            width: 100%;
+        }
+    }
+}
+
+
+@media screen and (max-width:768px){
+     .danniTop{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        row-gap: 20px;
+     }
+    .danniTop__card1{
+        grid-column: 1 / 3;
+    }
+    .danniTop__card2{
+        grid-column: 3 / 5;
+      
+    }
+    .danniTop__card3{
+        grid-row: 2 / 3;
+        grid-column: 1 / 5;
+        max-width: 100%;
+
+    }
+
+    .danniMain{
+        flex-direction: column-reverse;
+
+        &__left{
+            max-width: 100%;
+        }
+        &__right{
+            max-width: 920px;
+            width: 100%;
+            height: 280px;
+       }
+
+    }
+
+    .lastWrapper{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            row-gap: 20px;
+
+        .lastCard1{
+            grid-column: 1 / 3;
+        }
+        .lastCard2{
+            grid-column: 3 / 5;
+          
+        }
+        .lastCard3{
+            grid-row: 2 / 3;
+            grid-column: 1 / 5;
+            max-width: 100%;
+    
+        }
+
+    }
+}
+
+@media screen  and (max-width:320px){
+
+    .danniTop{
+        display:flex;
+        flex-direction: column;
+    }
+    .section-last{
+        display: none;
+    }
+
+}

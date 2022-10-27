@@ -1,0 +1,124 @@
+.site-footer{
+    background-color: #34495E;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 56px;
+
+}
+.footerLeft{
+
+
+    &__iteam{
+         margin-bottom: 32px;
+
+        &--title{
+            margin-bottom: 9px;
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    }
+    &__iteamBotm{
+                
+        &--iteam{
+            padding-right: 8px;
+            border-right: 1px solid #F2F2F2;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            color: #F2F2F2;
+
+
+            &:last-child{
+                border: none;
+            }
+        }
+    }
+}
+.footerRightTop{
+    
+
+    &__title{
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    form{
+          margin: 24px 0 40px 0;
+          display: flex;
+          align-items: center;
+          column-gap: 20px;
+        input{
+            width: 174px;
+            height: 44px;
+            background: #253544;
+            border-radius: 2px;
+            border: none;
+            &::placeholder{
+                font-size: 12px;
+                line-height: 15px;
+                color: #BDBDBD;
+
+            }
+        }
+        button{
+            width: 44px;
+            height: 44px;
+            background: #5199FF;
+            border-radius: 2px;
+            border: none;
+            
+        }
+    }
+
+}
+.footerRightBotm{
+
+    &__title{
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+    }
+    &__social{
+        margin-top: 24px;
+        display: flex;
+        column-gap: 18px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerRight{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:320px){
+    .footer{
+        padding: 0;
+    }
+
+    .footerLeft__iteamBotm{
+        display: none;
+    }
+    .footerRight{
+        display: flex;
+        flex-direction: column;
+    }
+}

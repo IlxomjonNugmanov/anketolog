@@ -1,0 +1,32 @@
+.df{
+    display: flex;
+}
+.dg{
+    display: grid;
+}
+.red{
+    color: var(--text-colorRed);
+}
+:root{
+
+    --bnt-colorBlue:#2D9CDB;
+    --bntActive-colorBlue:#6ec1f1;
+    --text-colorWhite:#fff;
+    --text-colorBlack:#333333;
+    --text-colorRed:#EB5757;
+
+}
+@mixin subtext14 {
+    font-size: 14px;
+    line-height: 20px;
+}
+@mixin subtext18 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+@mixin subTitle {
+    font-size: 36px;
+    line-height: 40px;
+    color: #333333;
+}
