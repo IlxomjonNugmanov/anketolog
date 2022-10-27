@@ -80,4 +80,18 @@
     flex-direction: column-reverse;
     row-gap: 10px;
    }
+   .onlineWrapper__title{
+    font-size: 20px;
+    line-height: 24px;
+   }
+   .onlineWrapper--subtitle{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+   }
+   .onlineWrapper__itaem{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 163.42%;
+   }
 }

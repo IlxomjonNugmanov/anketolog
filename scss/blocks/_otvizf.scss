@@ -27,7 +27,7 @@
     &__cardTop{
        display: flex;
        align-items: center;
-       text-align: start
+       text-align: start;
        
 
     }
@@ -96,19 +96,66 @@
 }
 @media screen  and (max-width:545px){
     .otvizf__cards {
-      column-gap: 10px; 
+      column-gap: 0px; 
     }
     
 }
 
 @media screen  and (max-width:320px){
+    .otvizf__cards{
+        align-items: flex-start;
+        position: relative;
+        text-align: center;
+
+    }
+    .otvizf__cardTop{
+        flex-direction: column;
+    }
+   
     .otvizf__cardTop--logo{
      display: none;
     }
-    
+    .otvizf__leftShape{
+        padding-top: 30px;
+        position: absolute;
+        left: 15px;
+        top: 20px;
+    }
+    .otvizf__rightShape{
+        position: absolute;
+        right: 15px;
+        top: 50px;
+    }
     
     .otvizf__topShape {
-       bottom: -100px;
-       right: -22px;
+        width: 50px;
+        bottom: -81px;
+        right: -13px;
+
+       a{
+
+        img{
+           width: 100%; 
+        }
+       }
     }
+   .otvizf__title{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+   }
+   .otvizf__cardTopName--title{
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+   }
+   .otvizf__cardTopName--text{
+    font-weight: 500;
+     font-size: 10px;
+     line-height: 12px;
+   }
+   .otvizf__cardMain--text{
+     font-size: 12px;
+     line-height: 20px;
+   }
 }
