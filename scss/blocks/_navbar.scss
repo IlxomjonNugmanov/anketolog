@@ -1,0 +1,40 @@
+.leftNavbar{
+    
+    max-width: 250px;
+    position: absolute;
+    top: 80px;
+    
+   
+    nav{
+        width: 100%;
+        background-color: #fff;
+        padding: 10px;
+
+        ul{
+        
+
+            li{
+                 margin-bottom: 15px;
+                a{
+
+                    padding: 10px 0;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 15px;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    color: #333;
+                    border-bottom: 1px solid transparent;
+                     &:hover{
+                    border-bottom: 1px solid #333;
+    
+                    }
+                }
+                
+            }
+        }
+    }
+}
+.active{
+    display: none;
+}

@@ -85,6 +85,16 @@
         margin: 0 auto;
     }
 }
+@media screen and (max-width:768px){
+    .constructWrapper__imgCenter{
+        max-width: 90%;
+        margin: 0 auto;
+
+        img{
+            width: 100%;
+        }
+    }
+}
 @media screen and (max-width:320px){
 .constructWrapper--title{
     font-size: 20px;

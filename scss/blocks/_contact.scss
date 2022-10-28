@@ -206,6 +206,11 @@
 
     }
 }
+@media screen  and (max-width:405px){
+   .lastWrapper{
+    flex-direction: column;
+   }
+}
 
 @media screen  and (max-width:320px){
 
@@ -213,8 +218,8 @@
         display:flex;
         flex-direction: column;
     }
-    .section-last{
-        display: none;
-    }
+    // .section-last{
+    //     display: none;
+    // }
 
 }

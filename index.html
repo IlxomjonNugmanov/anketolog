@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
         <div class="header-inner header">
             <div class="header__logoWrapper">
                 <img src="./images/header-a.svg" alt="" width="41" height="40">
-                <img class="hamburger" src="./images/Menu hero.svg" alt="" width="32" height="32">
+                <img class="hamburger" onclick="navbar()" src="./images/Menuhero.svg" alt="" width="32" height="32">
                 <a class="header-logo" href="#">
                     <img src="./images/anketolog.png" alt=" site logo" height="40">
                 </a>
@@ -33,18 +33,29 @@
                         <a href="" class="header__link">Конструктор тестов</a>
                     </li>
                     <li class="header__iteam">
-                        <a href="" class="header__link">контакты</a>
+                        <a href="./pages/contact.html" class="header__link">контакты</a>
                     </li>
                 </ul>
             </nav>
             <div class="header__right">
-                <a href="#" class="header__right--btn"><img src="./images/headerbtn-icon.png" alt="" width="13.5" height="10"> Войти</a>
+                <a href="#" class="header__right--btn"><img src="./images/headerbtn-icon.png" alt="" width="13" height="10"> Войти</a>
                 <div class="shape">
                     <p class="shape-p">
                       ?
                     </p>
-                 </div>
+                </div>
             </div>
+        </div>
+        <div class="leftNavbar active">
+             <nav>
+                <ul>
+                  <li><a href="#">Тарифы и цены</a></li>
+                  <li><a href="#">База респондентов</a></li>
+                  <li><a href="#">Демо-версия</a></li>
+                  <li><a href="#">Конструктор тестов</a></li>
+                  <li><a href="./pages/contact.html">контакты</a></li>
+                </ul>
+             </nav>
         </div>
         <div class="container">
             <div class="header__center">
@@ -734,5 +745,9 @@
         </div>
     </footer>
     <!-- Site Footer End  -->
+
+
+
+    <script src="./js/app.js"></script>
 </body>
 </html>
